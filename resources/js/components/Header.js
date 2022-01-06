@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {
     Collapse,
     Navbar,
@@ -9,7 +8,7 @@ import {
     NavLink,
 } from 'reactstrap';
 
-export default class Header extends React.Component {
+  class Header extends React.Component {
 
     constructor(props) {
         super(props);
@@ -36,7 +35,7 @@ export default class Header extends React.Component {
                             <NavLink href="/components/">Components</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink href="#">Link2</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
@@ -46,7 +45,3 @@ export default class Header extends React.Component {
 }
 }
  export default Header;
-
-if (document.getElementById('header')) {
-    ReactDOM.render(<Header />, document.getElementById('header'));
-}
