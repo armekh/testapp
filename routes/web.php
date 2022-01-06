@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('{slug?}', function ($slug = '/') { return view('welcome'); })->where('slug', '(services|index)');
 
 Route::get('/tasks', 'App\Http\Controllers\TasksController@index');
 Route::get('/tasks/{id}', 'App\Http\Controllers\TasksController@show');

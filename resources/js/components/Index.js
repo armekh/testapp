@@ -111,7 +111,8 @@ class Index extends React.Component {
 
         return (
             <div className='appContainer'>
-                <Button color='primary' onClick={this.toggleNewTaskModal.bind(this)}>Add Task</Button>
+                <Button color='primary' block onClick={this.toggleNewTaskModal.bind(this)}>Add Task</Button>
+                <p></p>
 
                 <Modal isOpen={this.state.newTaskModal} toggle={this.toggleNewTaskModal.bind(this)} className={this.props.className}>
                     <ModalHeader toggle={this.toggleNewTaskModal.bind(this)}>Add new Task</ModalHeader>
@@ -178,7 +179,7 @@ class Index extends React.Component {
                 </Modal>
 
 
-                <Table>
+                <Table className='table-dark table-hover'>
                     <thead>
                         <tr>
                             <th> # </th>
